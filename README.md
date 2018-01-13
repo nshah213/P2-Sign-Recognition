@@ -83,8 +83,8 @@ To train the model, I used an ADAM optimizer with learning rate of 0.001, once t
 
 My final model results were:
 * training set accuracy of 1.0
-* validation set accuracy of 0.981 
-* test set accuracy of 0.967
+* validation set accuracy of 0.9855 
+* test set accuracy of 0.9696
 
 Multiple architectures exploring the possibilities of connecting different number of layers with various parameters were created and are now commented out in the code. As I was working on developing these it became apparent that the image preprocessing had a significant impact on the performance of CNN algorithms. Also, adding non-linearity like RELU drastically increases the performance. I tried some other functions to add non-linearity, but RELU worked almost as well as any other option that I tried.
 
@@ -101,7 +101,7 @@ Here are 55 German traffic signs that I found on the web. A lot of the new image
 Here is an image that contains all 55 of the web images downloaded and used for further. 
 ![alt text][image4]
 
-The model classifies all the 55 test images correctly!
+The model classifies 51 of the 55 test images correctly. Further, it classifies 54 traffic signs if we look at Top5 accuracy.
 
 Following are the results for the first 10 test images. Result images for the rest are available in the './results/Webimages/' folder
 ![alt text][image5]
